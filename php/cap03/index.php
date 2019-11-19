@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Página que incluye otros archivos</title>
+<title>Página</title>
 </head>
 <body>
 <div id="contenedor">
