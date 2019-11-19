@@ -10,6 +10,6 @@
   <div id="contenidoPrincipal"> Contenido principal </div>
   <?php include("botonera.php"); ?>
   <?php include("pie.php"); ?>
-</div><!-- cierre del contenedor -->
+</div><!-- cierre del contenedor div-->
 </body>
 </html>
