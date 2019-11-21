@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        .mañana {
+            background-color: #A0EEF0;
+            color: #971D78;
+        }
+        .tarde {
+            background-color: #47b8fe;
+            color: #dcfe24;
+        }
+        .noche {
+            background-color: #fa8f6f;
+            color: #971d78;
+        }
+        .madrugada {
+            background-color: #0a0d2c;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body class="mañana">
+    <p id="output">
+        <script type="text/javascript">
+            //Constante de tipo texto
+            const mensajeHola = 'Hola Mundo';
+            // BUsco en el DOM la etiqueta con id="output" y asigno su contenido
+            document.getElementById('output').innerHTML = mensajeHola;
+        </script>
+    </p>
+    <p id="saludo">
+        <script type="text/javascript">
+            //Hora del sistema
+            const hora = new Date().getHours();
+            let mensaje;
+            let nombreEstilo;
+
+            if(hora < 13){
+                mensaje      = "Buenos días";
+                nombreEstilo = 'mañana';
+            }
+            else if (hora < 21){
+                mensaje      = "Buenas tardes";
+                nombreEstilo = 'tarde'
+            }
+            else if (hora < 24){
+                mensaje      = "Buenas noches";
+                nombreEstilo = 'noche';
+            }
+            else{
+                mensaje      = 'Hola';
+                nombreEstilo = 'madrugada';
+            }
+
+            document.getElementById('saludo').innerHTML = mensaje;
+            document.body.className = nombreEstilo;
+        </script>
+    </p>
+</body>
+</html>

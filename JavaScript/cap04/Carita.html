@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Time</title>
+    <meta name="description" content="Carita" />
+    <meta name="author" content="SitePoint" />
+    <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+  </head>
+
+  <body>
+    <p id="output"></p>
+    <img id="carita" />
+    <div id="texto"></div>
+
+    <script type="text/javascript">
+      const dia = new Date().getDay();
+      const valorSrc = `Carita${dia}.png`;
+      //const valorSrc ='Carita' + día + '.png';
+      let mensaje;
+
+      if (dia === 0 || dia === 6) {
+        mensaje = "Buen fin de semana";
+      } else {
+        mensaje = `Faltan <strong> ${6 -
+          dia} </strong> días para el fin de semana`;
+      }
+
+      const texto = `
+                    <h1>Hola</h1>
+                    <p>que tienes planeado para hoy?</>`;
+
+      document.getElementById("carita").src = valorSrc;
+      document.getElementById("output").innerHTML = mensaje;
+      document.getElementById("texto").innerHTML = texto;
+    </script>
+  </body>
+</html>

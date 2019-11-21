@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Pagina</title>
-</head>
-<body>
-    Esto es una muestra
-</body>
+  </head>
+  <body>
+    Esto es una muestra de la pagina
+    <h3>Esto es un título</h3>
+    <div id="menu">
+      <ul>
+        <li>Primer Elemento</li>
+        <li>Segundo Elemento</li>
+        <li>Tercer Elemento</li>
+      </ul>
+    </div>
+    <div>
+      <p id="output">
+        <script type="text/javascript">
+          const mensajeHola = 'Hola Mundo';
+          document.getElementById('output').innerHTML = mensajeHola;
+        </script>
+      </p>
+    </div>
+  </body>
 </html>
